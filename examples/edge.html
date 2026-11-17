@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head><title>Edge cases</title></head>
+<body>
+<TABLE>
+  <TR><TH scope="col">Item</TH></TR>
+  <TR><TD>Apples</TD></TR>
+</TABLE>
+<table>
+  <tr>
+    <th
+      scope="col">Name</th>
+  </tr>
+  <tr><td>Apples</td></tr>
+</table>
+<table>
+  <thead>
+    <tr><td>City</td></tr>
+    <tr><td>Extra</td></tr>
+  </thead>
+  <tbody><tr><td>Multan</td></tr></tbody>
+</table>
+<style>
+/* A table written in a style block is not a table: */
+.fake { content: "<table>"; }
+</style>
+</body>
+</html>

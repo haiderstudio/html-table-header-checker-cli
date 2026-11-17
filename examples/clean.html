@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head><title>Tables</title></head>
+<body>
+<table>
+  <tr><th>Name</th><th>Price</th></tr>
+  <tr><td>Apples</td><td>2</td></tr>
+</table>
+<table>
+  <thead>
+    <tr><td>City</td><td>Country</td></tr>
+  </thead>
+  <tbody>
+    <tr><td>Multan</td><td>Pakistan</td></tr>
+  </tbody>
+</table>
+<table>
+  <tr><th>Outer</th></tr>
+  <tr><td>
+    <table>
+      <tr><th>Inner</th></tr>
+      <tr><td>Value</td></tr>
+    </table>
+  </td></tr>
+</table>
+<!-- A table in a comment is not a table:
+<table><tr><td>No header</td></tr></table>
+-->
+<script>
+// A table written in a script string is not a table either:
+var markup = '<table><tr><td>No header</td></tr></table>';
+</script>
+</body>
+</html>
